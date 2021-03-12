@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Install the Netlify CLI globally:
+Install the [Netlify CLI](https://github.com/netlify/cli) globally:
 
 ```bash
 npm i -g netlify-cli
@@ -14,13 +14,21 @@ Run the development server:
 ntl dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The [tsconfig](tsconfig.json) is automatically setup with paths to the following common folders:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- `@components/*`
+- `@constants/\*`
+- `@hooks/*`
+- `@models/*`
+- `@utils/*`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Your browser will automatically open [http://localhost:8888](http://localhost:8888).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## API Routes
+
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:8888/api/hello](http://localhost:8888/api/hello). This endpoint can be edited in `src/pages/api/hello.ts`.
+
+The `src/pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
