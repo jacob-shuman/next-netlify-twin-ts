@@ -17,7 +17,7 @@ ntl dev
 The [tsconfig](tsconfig.json) is automatically setup with paths to the following common folders:
 
 - `@components/*`
-- `@constants/\*`
+- `@constants/*`
 - `@hooks/*`
 - `@models/*`
 - `@utils/*`
